@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <link rel="stylesheet" href="my_css/mystyles.css">
+    <link rel="stylesheet" href="my_css/queries.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <section>
+            <div class="general_container">
+                <div class="sub_container">
+                    <div class="content">
+                        <h1>YOU</h1>
+                    </div>
+                    <div class="overall_bg">
+                        <div class="status_bg" v-bind:style="{width: playerHealth + '%'}">
+                            {{ playerHealth }}
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_container">
+                    <div class="content">
+                        <h1>MONSTER</h1>
+                    </div>
+                    <div class="overall_bg">
+                        <div class="status_bg" v-bind:style="{width: monsterHealth + '%'}">
+                            {{ monsterHealth }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section v-if="!isGamePlaying">
+            <div class="new_game">
+                <p><button class="start" v-on:click="handle">START NEW GAME</button></p>
+            </div>
+        </section>
+        <section v-else>
+            <div class="characters">
+                <p><button class="red" v-on:click="attack">ATTACK</button></p>
+                <p><button class="black" v-on:click="specialAttack">SPECIAL ATTACK</button></p>
+                <p><button class="yellow" v-on:click="heal">HEAL</button></p>
+                <p><button class="pink" v-on:click="giveUp">GIVE UP</button></p>
+            </div>
+        </section>
+        <section v-if="turns.length > 0">
+            <div class="next">
+                <ul>
+                    <li v-for="turn in turns" v-bind:class="{playerTurn:turn.isPlayer, monsterTurn: !turn.isPlayer}">
+                        {{ turn.text }}
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="my_js/vue.js"></script>
+    <script src="my_js/my_app.js"></script>
+</body>
+
+</html>

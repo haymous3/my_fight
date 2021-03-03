@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1200px){
+    .characters {
+        margin: 44px auto;
+        flex-direction: column;
+        height: fit-content;
+       width: fit-content;
+    }
+    body{
+        height: fit-content;
+    }
+    .characters button {
+        width: 250px;
+    }
+  
+}
+@media only screen and (max-width: 1023px){
+    .characters {
+        margin: 44px auto;
+        flex-direction: column;
+       height: fit-content;
+       width: fit-content;
+    }
+    body{
+        height: fit-content;
+    }
+    .characters button {
+        width: 250px;
+    }
+  
+}

@@ -1,0 +1,153 @@
+body{
+    font-family: Varela Round;
+    background-image: url(../images/william-daigneault-GAF48XT3yn8-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-blend-mode: overlay;
+    opacity: 0.7;
+    background-color: #ffffff; */
+}
+.overall_bg{
+    background-color: #eee;
+    height: 40px;
+    width: 70%;
+    margin: auto;  
+}
+h1{
+    color: #fff;
+}
+.overall_bg p{
+    text-align: center;
+    color: #ffffff;
+}
+.status_bg{
+    background-color: green;  
+    height: 40px;
+    text-align: center;
+    color: #ffffff;
+    transition: width 500ms;
+}
+.general_container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.content h1{
+    text-align: center;
+}
+.sub_container{
+    width: 40%;
+    
+}
+.new_game{
+    width: 70%;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    box-shadow: 5px 10px 18px #000;
+    margin: 30px auto;
+    height: 6em;
+}
+.new_game p{
+   text-align: center;
+   margin-top: 25px;
+}
+.new_game button{
+    padding: 15px 30px;
+    background-color: #aaffb0;
+    border: 1px solid #aaffb0;
+    border-radius: 5px;
+    font-family: Varela Round;
+    font-size: 15px;  
+    
+}
+:hover.start{
+    background-color: #76ff7e;
+    border: 1px solid #76ff7e;
+}
+.characters{
+    width: 70%;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    box-shadow: 5px 10px 18px #000;
+    margin: 30px auto;
+    height: 6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.characters button{
+    padding: 15px 30px;
+    /* background-color: #aaffb0;
+    border: 1px solid #aaffb0; */
+    font-family: Varela Round;
+    font-size: 15px;     
+}
+.red{
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+:hover.red{
+    background-color: green;
+    border: 1px solid green;
+    color: #ffffff
+}
+.black{
+    background-color:black;
+    border: 1px solid black;
+    color: #ffffff;
+    border-radius: 5px;
+}
+:hover.black{
+    background-color: green;
+    border: 1px solid green;
+}
+.yellow{
+    background-color: yellow;
+    border: 1px solid yellow;
+    border-radius: 5px;
+}
+:hover.yellow{
+    background-color: green;
+    border: 1px solid green;
+    color: #ffffff;
+}
+.pink{
+    background-color: pink;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+.pink:hover{
+    background-color: green;
+    border: 1px solid green;
+    color: #ffffff;
+}
+.next{
+    width: 70%;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    box-shadow: 5px 10px 18px #000;
+    margin: 30px auto;
+    /* height: 6em; */
+
+}
+.next p{
+    text-align: center;
+    /* margin-top: 25px; */
+}
+li{
+    list-style-type: none;
+    text-align: center;
+}
+.playerTurn{
+    background-color: green;
+    color: #ffffff;
+
+}
+.mosterTurn{
+    background-color: #ffffff;
+    color: rgb(000, 250, 000)
+
+}
+
